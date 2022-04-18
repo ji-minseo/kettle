@@ -1,7 +1,7 @@
 /*COMMON*/
 body {
-    font-family: 'Nanum Gothic', sans-serif;
-    color: #333;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
@@ -13,8 +13,9 @@ img {
 a {
 
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
+
 .inner {
 
     position: relative;
@@ -23,4 +24,118 @@ a {
 
 }
 
-/*MAIN*/
+.btn {
+
+}
+
+.btn:hover {
+
+}
+section {
+    height: 100vh;
+    width: 100%;
+}
+.text-group span {
+    text-transform: uppercase;
+}
+.text-group span::after {
+    content: "";
+    display: block;
+    width: 40px;
+    margin: 10px auto 30px;
+    height: 1px;
+    background-color: #fff;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    position: fixed;
+
+}
+header .inner {
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    z-index: 1;
+}
+header .logo img {
+    height: 100px;
+    transform: rotate(-15deg);
+    pointer-events: auto;
+    transition: 1s;
+}
+header .logo:hover img {
+    transform: rotate(-195deg);
+}
+header .hamburger-menu {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+}
+/*MAIN VISUAL*/
+.visual {
+    background-color: #000;
+
+}
+.visual .inner {
+
+}
+.visual .main-video {
+
+}
+.visual .arrow {
+
+}
+
+/* COLLABS */
+.collabs {
+    background-color: #000;
+}
+.collabs .inner {
+
+}
+.collabs h2 {
+    font-size: 42px;
+
+}
+.collabs h2 a {
+    font-weight: 100;
+}
+.collabs h2 a::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+    height: 1.3px;
+    background-color: #fff;
+    
+}
+.collabs .swiper-container {
+
+}
+.collabs .swiper-slide {
+    
+}
+.collabs .swiper-slide a {
+    
+}
+
+/* THE TREVOR PROJ */
+.the-trevor-project {
+    background-color: #ff5a3d;
+}
+.the-trevor-project .inner {
+
+}
+.the-trevor-project .text-group {
+
+}
+.the-trevor-project .text-group span {
+
+}
+.the-trevor-project .text-group h3 {
+    font-size: 72px;
+}
