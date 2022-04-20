@@ -22,6 +22,18 @@
 
     <link rel="stylesheet" href="./css/main.css">
 
+    <!-- SWIPER -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+ 
+    <!-- SCTOLLMAGIC -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script defer src="./js/youtube.js"></script>
+
     <script defer src="./js/main.js"></script>
 
 </head>
@@ -55,19 +67,26 @@
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <a href=""><img src="" alt=""></a>
+                        <img src="./images/apple.svg" alt="Apple logo">
+                        <span>Shhhhhhh. What happens in Cupertino stays in Cupertino.</span>
                     </div>
                     <div class="swiper-slide">
-                        <a href=""><img src="" alt=""></a>
+                        <img src="./images/natgeo.svg" alt="NatGeo logo">
+                        <span>Modernizing a 130-year-old digital brand for today's homo sapiens.</span>
+                        <a href="">View case study</a>
                     </div>
                     <div class="swiper-slide">
-                        <a href=""><img src="" alt=""></a>
+                        <img src="./images/amex-logo_lg_2x.png" alt="Amex logo">
+                        <span>Operating like a start-up to grow small businesses.</span>
+                        <a href="">View case study</a>
                     </div>
                     <div class="swiper-slide">
-                        <a href=""><img src="" alt=""></a>
+                        <img src="./images/glossier.svg" alt="Glossier logo">
+                        <span>Disrupting the beauty industry with data-driven social campaigns.</span>
                     </div>
                     <div class="swiper-slide">
-                        <a href=""><img src="" alt=""></a>
+                        <img src="./images/netflix.svg" alt="Netflix logo">
+                        <span>Streamlining the visual language of a media giant.</span>
                     </div>
                 </div>
             </div>
@@ -75,7 +94,10 @@
     </section>
     <section class="the-trevor-project">
         <div class="inner">
-            <img src="" alt="">
+            <video autoplay muted loop>
+                <source src="./images/wearekettle-1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
             <div class="text-group">
                 <span>The trevor project</span>
                 <h3>Work that helps save lives.</h3>
@@ -84,7 +106,10 @@
     </section>
     <section class="departures">
         <div class="inner">
-            <img src="" alt="">
+            <video autoplay muted loop>
+                <source src="./images/wearekettle-2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
             <div class="text-group">
                 <span>departures</span>
                 <h3>A new era for Departures, beyond the printed page.</h3>
@@ -93,7 +118,10 @@
     </section>
     <section class="discover">
         <div class="inner">
-            <img src="" alt="">
+            <video autoplay muted loop>
+                <source src="./images/wearekettle-3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
             <div class="text-group">
                 <span>DISCOVER</span>
                 <h3>Getting honest about the new realities of college.</h3>
@@ -102,7 +130,7 @@
     </section>
     <section class="korres">
         <div class="inner">
-            <img src="" alt="">
+            <img src="./images/korres.gif" alt="Korres">
             <div class="text-group">
                 <span>Korres</span>
                 <h3>An online shop with a seed to skin story.</h3>
@@ -111,7 +139,7 @@
     </section>
     <section class="urby">
         <div class="inner">
-            <img src="" alt="">
+            <img src="./images/urby.gif" alt="">
             <div class="text-group">
                 <span>Urby</span>
                 <h3>A site that feels like home.</h3>
@@ -120,14 +148,14 @@
     </section>
     <section class="babe-by-hatch">
         <div class="inner">
-            <img src="" alt="">
+            <img src="./images/babe by hatch.jpg" alt="">
             <div class="text-group">
                 <span>Babe by hatch</span>
                 <h3>The raw and real stories of motherhood.</h3>
             </div>
         </div>
     </section>
-    <section class="inclusion-and-DIVERSITY">
+    <section class="inclusion-and-diversity">
         <div class="inner">
             <div class="text-group">
                 <span>INCLUSION &amp; DIVERSITY</span>
@@ -137,26 +165,40 @@
     </section>
     <section class="in-other-news">
         <div class="inner">
-            <h4>In other news</h4>
-        </div>
-        <div class="text-group">
-            <div class="column">
-                <h4>Our work with American Express, Giant Spoon and T Brand Studio for Departures has been nominated for a Webby Award.</h4>
-                <a href=""></a>
+            <div class="sub-section">
+                <h4>In other news</h4>
+        
+                <div class="text-group">
+                    <div class="column">
+                        <p>Our work with American Express, Giant Spoon and T Brand Studio for Departures has been nominated for a Webby Award.</p>
+                        <a href="">Vote for Kettle now ></a>
+                    </div>
+                    <div class="column">
+                        <p>We are now a part of the Code and Theory family. And we can’t wait to see what we’ll create together.</p>
+                        <a href="">Read the AdWeek Article ></a>
+                    </div>
+                    <div class="column">
+                        <p>The Trevor Project wanted to connect to Gen Z. We helped them expand their life-saving work.</p>
+                        <a href="">Read the AdAge Article ></a>
+                    </div>
+                </div>
             </div>
-            <div class="column">
+            <div class="sub-section">
+                <div class="text-group">
 
+                </div>
+                <h3>Seeking the kind, the brave, and the bold.</h3>
+                <img src="./images/office-1_lg_2x.jpg" alt="Job image1" />
+                <img src="./images/office-3_lg_2x.jpg" alt="Job image2" />
+                <div class="more">
+                    <a href="">That s me!</a>
+                </div>
             </div>
-            <div class="column">
-
-            </div>
+            
+    
         </div>
     </section>
     <section class="jobs">
-        <h3>Seeking the kind, the brave, and the bold.</h3>
-        <div class="more">
-            <a href="">That s me!</a>
-        </div>
     </section>
     <section class="contact-us">
 
