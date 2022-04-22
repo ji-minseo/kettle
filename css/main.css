@@ -86,12 +86,15 @@ h3 {
 /* ANIMATIONS & MOVES */
 @keyframes linkhover{from{width:0}to{width:100%}}
 @keyframes floating{
-    from {
+    0% {
         transform:translateY(0px);
         opacity: 1;
     }
-    to{
-        transform: translateY(-100vh);
+    40% {
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-50vh);
         opacity: 0;
     }   
 }
@@ -143,8 +146,38 @@ h3 {
 
 
 /* .show .emoji */
+.emoji-default {
+    opacity: 0;
+    transition: 1s;
+}
 
-
+.show .emoji-default {
+    animation: 3.5s floating;
+}
+.show .emoji-default.delay-0 {
+    animation-delay: 0s;
+}
+.show .emoji-default.delay-1 {
+    animation-delay: .5s;
+}
+.show .emoji-default.delay-2 {
+    animation-delay: 1s;
+}
+.show .emoji-default.delay-3 {
+    animation-delay: 1.5s;
+}
+.show .emoji-default.delay-4 {
+    animation-delay: 2s;
+}
+.show .emoji-default.delay-5 {
+    animation-delay: 2.5s;
+}
+.show .emoji-default.delay-6 {
+    animation-delay: 3s;
+}
+.show .emoji-default.delay-7 {
+    animation-delay: 3.5s;
+}
 
 .bg-color {
     transition: all 1.5s;
@@ -634,7 +667,6 @@ footer {
 }
 .in-other-news .emojis .emoji {
     position: absolute;
-    animation: 2s floating;
     z-index: 999;
 }
 

@@ -39,7 +39,7 @@ document.addEventListener('scroll', function() {
 const emojis = document.querySelectorAll('.emoji');
 emojis.forEach(function(emoji) {
     console.log('HI');
-    rLeft = Math.floor(Math.random() * 100);
+    rLeft = Math.floor(Math.random() * 90);
     rTop = Math.floor(Math.random() * 100);
     console.log(rLeft);
     emoji.style.left = rLeft+'vw';
