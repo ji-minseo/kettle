@@ -150,6 +150,9 @@ h3 {
     transition: all 1.5s;
 }
 
+/* CURSOR-EFFECT */
+
+
 /* HEADER */
 header {
     width: 100%;
@@ -335,10 +338,10 @@ footer {
 }
 .collabs .swiper-prev, .collabs .swiper-next {
     width: 45%;
-    height: 405px;
+    height: 300px;
     z-index: 999;
     position: absolute;
-    top: 170px;
+    top: 30px;
 }
 .collabs .swiper-prev {
     left: 0;
