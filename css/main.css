@@ -643,6 +643,7 @@ footer {
     font-size: 100px;
     width: 60%;
     margin-bottom: 42px;
+    z-index: 1;
 
 }
 .in-other-news .image {
@@ -667,7 +668,7 @@ footer {
 }
 .in-other-news .emojis .emoji {
     position: absolute;
-    z-index: 999;
+    z-index: 0;
 }
 
 
