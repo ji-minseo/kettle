@@ -27,7 +27,7 @@ document.addEventListener('scroll', function() {
     if(scrollPos >= 8)
         {
             scrollPos = 8;
-            bgColor.style.backgroundColor ='rgba(255,255,255,'+scrollPos+0.5+')';
+            bgColor.style.backgroundColor ='#fff';
         }
     else if(scrollPos <=8)
         {
