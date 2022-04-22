@@ -12,3 +12,25 @@ new Swiper('.collabs .swiper-container', {
         }
     }
 });
+
+
+// in-other-news에서 스크롤시 배경색바뀌는 코드
+const bgColor = document.querySelector('.bg-color');
+
+document.addEventListener('scroll', function() {
+
+    const st = $(document).scrollTop();
+    const wh = $(document).height();
+
+
+    var scrollPos = (st*10)/wh;
+    if(scrollPos >= 8)
+        {
+            scrollPos = 8;
+            bgColor.style.backgroundColor ='rgba(255,255,255,'+scrollPos+0.5+')';
+        }
+    else if(scrollPos <=8)
+        {
+            bgColor.style.backgroundColor ='#fffcc0';
+        }
+});
