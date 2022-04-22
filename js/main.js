@@ -47,3 +47,16 @@ emojis.forEach(function(emoji) {
 
 
 });
+
+//순차적애니메이션 만들기위해 show 클래스 붙여주기
+const spyEls = document.querySelectorAll('.scroll-spy');
+spyEls.forEach(function(spyEl){
+    new ScrollMagic
+        .Scene({
+            triggerElement: spyEl,
+            triggerHook: .8
+        })
+        .setClassToggle(spyEl, 'show')
+        .addTo(new ScrollMagic.Controller());
+});
+//(scroll-spy 클래스가 있는요소가 뷰포트의 .8이상 내려갈 시 show라는 클래스  부착

@@ -82,6 +82,8 @@ h3 {
     font-size: 60px;
     font-weight: 400;
 }
+
+/* ANIMATIONS & MOVES */
 @keyframes linkhover{from{width:0}to{width:100%}}
 @keyframes floating{
     from {
@@ -93,19 +95,61 @@ h3 {
         opacity: 0;
     }   
 }
-/* .delay-0 {
+.back-to-position, .back-to-position-rotated, .back-to-position-rotated2 {
+    opacity: 0;
+    transition: 1s;
+}
+.back-to-position.to-right {
+    transform: translateX(-150px);/*왼->오 150px*/
+}
+.back-to-position.to-left {
+    transform: translateX(150px);/*오->왼 150px*/
+}
+.back-to-position.to-top {
+    transform: translateY(200px);/*아래->위 150px*/
+}
+.back-to-position-rotated.to-ldiagonal {
+    transform: rotate(-10.0001deg) translate(150px,150px);
+}
+.back-to-position-rotated2.to-rdiagonal {
+    transform: rotate(10.0001deg) translate(-150px,150px);
+}
+.show .back-to-position {/*쇼라는 클래스의 후손인 백투포지션이면 다시 보이고 원위치*/
+    opacity: 1;
+    transform: translateX(0);
+}
+.show .back-to-position-rotated {
+    opacity: 1;
+    transform: rotate(-10.0001deg) translate(0);
+}
+.show .back-to-position-rotated2 {
+    opacity: 1;
+    transform: rotate(10.0001deg) translate(0);
+}
+.show .back-to-position.delay-0 {
     transition-delay: 0s;
 }
-.delay-1 {
-    transition-delay: 1s;
+.show .back-to-position.delay-1,
+.show .back-to-position-rotated.delay-1,
+.show .back-to-position-rotated2.delay-1 {
+    transition-delay: .9s;
 }
-.delay-2 {
-    transition-delay: 2s;
-} */
+.show .back-to-position.delay-2 {
+    transition-delay: 1.8s;
+}
+.show .back-to-position.delay-3 {
+    transition-delay: 2.7s;
+}
+
+
+/* .show .emoji */
+
+
 
 .bg-color {
     transition: all 1.5s;
 }
+
 /* HEADER */
 header {
     width: 100%;
