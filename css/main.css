@@ -156,6 +156,9 @@ footer {
     padding: 30px;
     background-size: cover;
     margin-right: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .collabs .swiper-slide:nth-child(1) {
     background-image: url(../images/apple_lg_2x.jpg);
@@ -229,6 +232,9 @@ footer {
     font-size: 19px;
     line-height: 1.42105;
     
+}
+.collabs .swiper-slide a {
+    margin-top: auto;
 }
 .collabs .swiper-prev, .collabs .swiper-next {
     width: 45%;
