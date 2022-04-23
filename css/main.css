@@ -292,6 +292,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    transition: all .5s
 }
 .collabs .swiper-slide:nth-child(1) {
     background-image: url(../images/apple_lg_2x.jpg);
@@ -344,16 +345,22 @@ footer {
     background-image: url(../images/trevor_lg_2x.jpg);
     z-index: 0;
 }
-/* .collabs .swiper-slide-active {
+
+.collabs .swiper-slide.focused-1 {
     transform: translate(0px, 0px);
 }
-.collabs .swiper-slide-next {
+.collabs .swiper-slide.focused-2 {
+    transform: translate(0px, 0px);
+}
+.collabs .swiper-slide.focused-3 {
     transform: translate(-90px, 0px);
 }
-.collabs .swiper-slide-active:nth-child(3) {
+.collabs .swiper-slide.focused-4 {
     transform: translate(-240px, 0px);
-} */
-
+}
+.collabs .swiper-slide.focused-5 {
+    transform: translate(-430px, 0px);
+}
 
 .collabs .swiper-slide img {
     

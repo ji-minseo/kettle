@@ -1,14 +1,34 @@
 new Swiper('.collabs .swiper-container', {
-    slidesPerView: 5,
-    // spaceBetween: 30,
+    slidesPerView: 'auto',
     navigation: {
         prevEl: '.collabs .swiper-prev',
         nextEl: '.collabs .swiper-next'
     },
     on: {
+        init: function() {
+            this.slides[this.activeIndex+1].classList.add('focused-1');
+            this.slides[this.activeIndex+2].classList.add('focused-2');
+            this.slides[this.activeIndex+3].classList.add('focused-3');
+            this.slides[this.activeIndex+4].classList.add('focused-4');
+
+        },
         slideChangeTransitionStart : function() {
-            console.log(this.activeIndex);
-            this.activeIndex.classList.add('focused');
+            console.log();
+            // this.activeIndex.classList.add('focused');
+            console.log(this.slides[this.activeIndex]);
+            this.slides[this.activeIndex].classList.remove('focused-1');
+            this.slides[this.activeIndex+1].classList.remove('focused-2');
+            this.slides[this.activeIndex+2].classList.remove('focused-3');
+            this.slides[this.activeIndex+3].classList.remove('focused-4');
+
+
+            this.slides[this.activeIndex+1].classList.add('focused-1');
+            this.slides[this.activeIndex+2].classList.add('focused-2');
+            this.slides[this.activeIndex+3].classList.add('focused-3');
+            this.slides[this.activeIndex+4].classList.add('focused-4');
+
+
+
         }
     }
 });
