@@ -6,6 +6,8 @@ new Swiper('.collabs .swiper-container', {
     },
     on: {
         init: function() {
+            console.log(this.activeIndex);
+
             // this.slides[this.activeIndex+1].classList.add('focused-1');
             // this.slides[this.activeIndex+2].classList.add('focused-2');
             // this.slides[this.activeIndex+3].classList.add('focused-3');
@@ -15,17 +17,25 @@ new Swiper('.collabs .swiper-container', {
         slideChangeTransitionStart : function() {
             console.log();
             // this.activeIndex.classList.add('focused');
-            console.log(this.slides[this.activeIndex]);
-            this.slides[this.activeIndex].classList.remove('focused-1');
-            this.slides[this.activeIndex+1].classList.remove('focused-2');
-            this.slides[this.activeIndex+2].classList.remove('focused-3');
-            this.slides[this.activeIndex+3].classList.remove('focused-4');
+            this.slides[this.activeIndex-1].classList.remove('focused-1');
+            this.slides[this.activeIndex].classList.remove('focused-2');
+            this.slides[this.activeIndex+1].classList.remove('focused-3');
+            this.slides[this.activeIndex+2].classList.remove('focused-4');
+            this.slides[this.activeIndex+3].classList.remove('focused-5');
+
+            this.slides[this.activeIndex+1].classList.remove('focused-1');
+            this.slides[this.activeIndex+2].classList.remove('focused-2');
+            this.slides[this.activeIndex+3].classList.remove('focused-3');
+            this.slides[this.activeIndex+4].classList.remove('focused-4');
+            this.slides[this.activeIndex+5].classList.remove('focused-5');
 
 
-            this.slides[this.activeIndex+1].classList.add('focused-1');
-            this.slides[this.activeIndex+2].classList.add('focused-2');
-            this.slides[this.activeIndex+3].classList.add('focused-3');
-            this.slides[this.activeIndex+4].classList.add('focused-4');
+            this.slides[this.activeIndex].classList.add('focused-1');
+            this.slides[this.activeIndex+1].classList.add('focused-2');
+            this.slides[this.activeIndex+2].classList.add('focused-3');
+            this.slides[this.activeIndex+3].classList.add('focused-4');
+            this.slides[this.activeIndex+4].classList.add('focused-5');
+
 
 
 
@@ -58,10 +68,8 @@ document.addEventListener('scroll', function() {
 // RANDOM POSITION DIVS
 const emojis = document.querySelectorAll('.emoji');
 emojis.forEach(function(emoji) {
-    console.log('HI');
     rLeft = Math.floor(Math.random() * 90);
     rTop = Math.floor(Math.random() * 100);
-    console.log(rLeft);
     emoji.style.left = rLeft+'vw';
     emoji.style.top = rTop+'vh';
 

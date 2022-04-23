@@ -199,7 +199,6 @@ h3 {
     transition-delay: .18s;
 }
 .show.collabs .swiper-slide:nth-child(5) {
-    background-image: url(../images/netflix_lg_2x.jpg);
     transform: translate(-240px, 0px);
     transition-delay: .27s;
 }
@@ -385,21 +384,22 @@ header .hamburger-menu .dot:last-child {
     z-index: 0;
 }
 
-.collabs .swiper-slide.focused-1 {
+.show.collabs .swiper-slide.focused-1 {
     transform: translate(0px, 0px);
 }
-.collabs .swiper-slide.focused-2 {
+.show.collabs .swiper-slide.focused-2 {
     transform: translate(0px, 0px);
 }
-.collabs .swiper-slide.focused-3 {
+.show.collabs .swiper-slide.focused-3 {
+    transform: translate(0px, 0px);
+}
+.show.collabs .swiper-slide.focused-4 {
     transform: translate(-90px, 0px);
 }
-.collabs .swiper-slide.focused-4 {
+.show.collabs .swiper-slide.focused-5 {
     transform: translate(-240px, 0px);
 }
-.collabs .swiper-slide.focused-5 {
-    transform: translate(-430px, 0px);
-}
+
 
 .collabs .swiper-slide img {
     
