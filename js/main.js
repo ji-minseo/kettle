@@ -88,3 +88,26 @@ spyEls.forEach(function(spyEl){
         .addTo(new ScrollMagic.Controller());
 });
 //(scroll-spy 클래스가 있는요소가 뷰포트의 .8이상 내려갈 시 show라는 클래스  부착
+
+
+// HAMBURGERMENU
+
+// function openMenu() {
+//     const menu = document.querySelector('.menu');
+//     menu.style.display = 'block';
+//     //add class here for animation
+// }
+
+// function closeMenu() {
+//     const menu = document.querySelector('.menu');
+//     menu.style.display = 'none';
+// }
+
+const openMenu = () => {
+    const menu = document.querySelector('.menu');
+    menu.style.display = 'block';
+}
+const closeMenu = () => {
+    const menu = document.querySelector('.menu');
+    menu.style.display = 'none';
+}

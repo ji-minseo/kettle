@@ -295,7 +295,8 @@ header .hamburger-menu:hover .dot {
     background-color: #000;
     color: #feffbc;
     z-index: 1000;
-    /* display: none; */
+    display: none;
+    transition: all .9s;
 }
 .menu .inner {
     display: flex;
@@ -311,6 +312,9 @@ header .hamburger-menu:hover .dot {
     width: 50px;
     height: 50px;
     /* border: 1px solid pink; */
+}
+.menu .x-btn:hover {
+    cursor: pointer;
 }
 .menu .x-btn .line {
     width: 3px;
