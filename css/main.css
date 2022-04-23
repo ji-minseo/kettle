@@ -87,15 +87,14 @@ h3 {
 
 /* MOUSE CURSOR */
 .cursor {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     position: absolute;
-    z-index: 1000;
     transform: translate(-50%, -50%);
     pointer-events: none;
-    transition: all 0.3s ease;
-    transition-property: background, transform;
+    transition-duration: 0.3s;
+    transition-property: background-color, transform;
     background-size: cover;
     z-index: 10000;
     background-color: white;
@@ -103,20 +102,27 @@ h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 9px;
+    line-height: 1.2;
 }
 .cursor-grow--arrow {
-    transform: scale(5);
+    transform: scale(3);
     background-color: #fff;
+    background-image: url(../images/under-arrow.png);
+    background-size: 10px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
 }
+
 .cursor-grow--show {
-    transform: scale(5);
+    transform: scale(4.5);
     background-color: #fff;
 }
 .cursor-grow--show::after {
-    content: "SHOW ME MORE";
+    transform: scale(0.3);
+    content: "SHOW ME HOW";
     display: block;
     color: #000;
-    font-weight: 100;
 }
 
 
