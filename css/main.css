@@ -98,6 +98,32 @@ h3 {
         opacity: 0;
     }   
 }
+@keyframes scrollDown {
+	0% {
+		bottom: 30px;
+		opacity: 0;
+	}
+
+	15% {
+		bottom: 30px;
+		opacity: 1;
+	}
+
+	30% {
+		bottom: 10px;
+		opacity: 1;
+	}
+
+	45% {
+		bottom: 10px;
+		opacity: 1;
+	}
+
+	100% {
+		bottom: 10px;
+		opacity: 0;
+	}
+}
 .back-to-position, .back-to-position-rotated, .back-to-position-rotated2 {
     opacity: 0;
     transition: 1s;
@@ -260,12 +286,24 @@ header .hamburger-menu .dot:last-child {
 
 }
 .visual .inner {
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 .visual .main-video {
+    width: 100%;
+
 
 }
 .visual .arrow {
+    position: absolute;
+    width: 20px;
+    bottom: 30px;
+    /* margin-top: -30px; */
+    animation: scrollDown 2s infinite;
 
 }
 
