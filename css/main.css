@@ -5,7 +5,9 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
+    cursor: none;
 }
+
 img {
     display: block;
 }
@@ -82,6 +84,42 @@ h3 {
     font-size: 60px;
     font-weight: 400;
 }
+
+/* MOUSE CURSOR */
+.cursor {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    background-size: cover;
+    z-index: 10000;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cursor-grow--arrow {
+    transform: scale(5);
+    background-color: #fff;
+}
+.cursor-grow--show {
+    transform: scale(5);
+    background-color: #fff;
+}
+.cursor-grow--show::after {
+    content: "SHOW ME MORE";
+    display: block;
+    color: #000;
+    font-weight: 100;
+}
+
+
 
 /* ANIMATIONS & MOVES */
 @keyframes linkhover{from{width:0}to{width:100%}}
