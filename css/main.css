@@ -1049,6 +1049,8 @@ footer .contact-us .text-group a {
 
 }
 footer .footer-content {
+    box-sizing: border-box;
+    padding-top: 40px;
     height: 400px;
     background-color: #000;
 }
@@ -1057,4 +1059,45 @@ footer .footer-content .inner {
     grid-template-areas:
         "copyright cities"
         "social-media social-media";
+    grid-template-columns: 75% 25%;
+    width: 90%;
+    margin: 0 auto;
+}
+footer .footer-content .copyright {
+    width:80%;
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 60px;
+}
+footer .footer-content .cities {
+
+}
+footer .footer-content .cities h5 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+footer .footer-content .swiper-container {
+    overflow: hidden;
+    height: 62px;
+    flex-grow: 1
+}
+footer .footer-content .swiper-slide {
+    height: 62px;
+    display: flex;
+    align-items: center;
+    
+}
+footer .footer-content .social-media {
+    
+}
+footer .footer-content .social-media .icons {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+footer .footer-content .social-media span {
+    font-size: 16px;
+    font-weight: 100;
 }

@@ -197,3 +197,11 @@ document.querySelector(".contact-us").addEventListener("mouseover", () => {
 document.querySelector(".contact-us").addEventListener("mouseleave", () => {
     mouseCursor.classList.remove("cursor-black");
 });
+
+
+// FOOTER SWIPER
+new Swiper('.footer-content .swiper-container', {
+    direction: 'vertical',
+    autoplay: true,
+    loop: true
+});
