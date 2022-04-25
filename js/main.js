@@ -7,12 +7,6 @@ new Swiper('.collabs .swiper-container', {
     on: {
         init: function() {
             console.log(this.activeIndex);
-
-            // this.slides[this.activeIndex+1].classList.add('focused-1');
-            // this.slides[this.activeIndex+2].classList.add('focused-2');
-            // this.slides[this.activeIndex+3].classList.add('focused-3');
-            // this.slides[this.activeIndex+4].classList.add('focused-4');
-
         },
         slidePrevTransitionStart : function() {
             this.slides[this.activeIndex+1].classList.remove('focused-1');
