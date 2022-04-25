@@ -95,12 +95,14 @@ spyEls.forEach(function(spyEl){
 const openMenu = () => {
     const menu = document.querySelector('.menu');
     menu.style.display = 'block';
-    document.querySelector(".menu").classList.add("show");
+    setTimeout(function() { menu.classList.add("show"); }, 0);
+
+    
 }
 const closeMenu = () => {
     const menu = document.querySelector('.menu');
     menu.style.display = 'none';
-    document.querySelector(".menu").classList.remove("show");
+    menu.classList.remove("show");
 }
 
 // MOUSE CURSOR EFFECT
