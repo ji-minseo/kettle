@@ -95,15 +95,16 @@ spyEls.forEach(function(spyEl){
 const openMenu = () => {
     const menu = document.querySelector('.menu');
     menu.style.display = 'block';
+    document.querySelector(".menu").classList.add("show");
 }
 const closeMenu = () => {
     const menu = document.querySelector('.menu');
     menu.style.display = 'none';
+    document.querySelector(".menu").classList.remove("show");
 }
 
 // MOUSE CURSOR EFFECT
 let mouseCursor = document.querySelector(".cursor");
-let sections = document.querySelectorAll(".main-video"); //메뉴 링크
   //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
   //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
 const cursor = (e) => {
@@ -113,18 +114,12 @@ const cursor = (e) => {
 window.addEventListener("mousemove", cursor);
 
 
-sections.forEach((section) => {
-    section.addEventListener("mouseover", () => {
-      mouseCursor.classList.add("cursor-grow--arrow");
-    //   mouseCursor.style.zIndex = "-1";
-    //   section.classList.add("hovered-link"); - 다른요소조차 클래스추가해서 바꿀수있다!
-    });
-    section.addEventListener("mouseleave", () => {
-      mouseCursor.classList.remove("cursor-grow--arrow");
-    //   mouseCursor.style.zIndex = "1000";
-    //   section.classList.remove("hovered-link");
-    });
-  });
+document.querySelector(".main-video").addEventListener("mouseover", () => {
+    mouseCursor.classList.add("cursor-grow--arrow");
+});
+document.querySelector(".main-video").addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("cursor-grow--arrow");
+});
 
 document.querySelector(".the-trevor-project").addEventListener("mouseover", () => {
     mouseCursor.classList.add("cursor-grow--show");
