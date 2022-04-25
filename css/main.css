@@ -378,7 +378,7 @@ header .hamburger-menu:hover .dot {
 }
 .menu h4 {
     font-size: 32px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 .menu ul { 
     text-align: center;
@@ -410,17 +410,19 @@ header .hamburger-menu:hover .dot {
 .menu .text-group {
 
 }
-
-.menu .text-group a {
-    position: relative;
+.menu .text-group h3 {
+    margin-bottom: 28px;
+    font-size: 30px;
 }
+
+
 
 .menu .text-group h3 a {
-    margin-bottom: 30px;
-    font-size: 32px;
+    position: relative;
+    
     
 }
-.menu .text-group a:hover::after {
+.menu .text-group h3 a:hover::after {
     content: "";
     display: block;
     width: 100%;
