@@ -13,7 +13,7 @@ img {
 }
 
 a {
-
+    cursor: none;
     text-decoration: none;
     color: #fff;
     position: relative;
@@ -21,8 +21,20 @@ a {
     transition: .3s;
 }
 .btn--radius {
-
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    cursor: none;
+    transition: all .7s;
+    padding: 10px 15px;
 }
+.btn--radius:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
 .btn--underline {
     font-size: 24px;
     font-weight: 100;
@@ -426,7 +438,6 @@ header .hamburger-menu {
 }
 header .hamburger-menu:hover {
     background-color: #fff;
-    cursor: pointer;
 }
 
 header .hamburger-menu .dot {
@@ -470,7 +481,6 @@ header .hamburger-menu:hover .dot {
     /* border: 1px solid pink; */
 }
 .menu .x-btn:hover {
-    cursor: pointer;
 }
 .menu .x-btn .line {
     width: 3px;
@@ -667,6 +677,7 @@ header .hamburger-menu:hover .dot {
     z-index: 5;
 }
 .collabs .swiper-slide:nth-child(7) {
+    color: #000;
     background-image: url(../images/loreal_lg_2x.jpg);
     z-index: 4;
 }
@@ -683,6 +694,7 @@ header .hamburger-menu:hover .dot {
     z-index: 1;
 }
 .collabs .swiper-slide:nth-child(11) {
+    color: #000;
     background-image: url(../images/trevor_lg_2x.jpg);
     z-index: 0;
 }
