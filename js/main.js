@@ -123,9 +123,77 @@ document.querySelector(".main-video").addEventListener("mouseleave", () => {
     mouseCursor.classList.remove("cursor-grow--arrow");
 });
 
+document.querySelector(".swiper-prev").addEventListener("mouseover", () => {
+    mouseCursor.classList.add("cursor-grow--left-arrow");
+});
+document.querySelector(".swiper-prev").addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("cursor-grow--left-arrow");
+});
+
+document.querySelector(".swiper-next").addEventListener("mouseover", () => {
+    mouseCursor.classList.add("cursor-grow--right-arrow");
+});
+document.querySelector(".swiper-next").addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("cursor-grow--right-arrow");
+});
+
 document.querySelector(".the-trevor-project").addEventListener("mouseover", () => {
     mouseCursor.classList.add("cursor-grow--show");
 });
 document.querySelector(".the-trevor-project").addEventListener("mouseleave", () => {
     mouseCursor.classList.remove("cursor-grow--show");
+});
+
+document.querySelector(".departures").addEventListener("mouseover", () => {
+    mouseCursor.classList.add("cursor-grow--meet");
+});
+document.querySelector(".departures").addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("cursor-grow--meet");
+});
+
+document.querySelector(".discover").addEventListener("mouseover", () => {
+    mouseCursor.classList.add("cursor-grow--watch");
+});
+document.querySelector(".discover").addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("cursor-grow--watch");
+});
+
+document.querySelector(".korres").addEventListener("mouseover", () => {
+    mouseCursor.classList.add("cursor-grow--tell");
+});
+document.querySelector(".korres").addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("cursor-grow--tell");
+});
+
+document.querySelector(".urby").addEventListener("mouseover", () => {
+    mouseCursor.classList.add("cursor-grow--urby");
+});
+document.querySelector(".urby").addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("cursor-grow--urby");
+});
+
+document.querySelector(".babe-by-hatch").addEventListener("mouseover", () => {
+    mouseCursor.classList.add("cursor-grow--check");
+});
+document.querySelector(".babe-by-hatch").addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("cursor-grow--check");
+});
+document.querySelector(".inclusion-and-diversity").addEventListener("mouseover", () => {
+    mouseCursor.classList.add("cursor-grow--plan");
+});
+document.querySelector(".inclusion-and-diversity").addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("cursor-grow--plan");
+});
+
+document.querySelector(".in-other-news").addEventListener("mouseover", () => {
+    mouseCursor.classList.add("cursor-black");
+});
+document.querySelector(".in-other-news").addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("cursor-black");
+});
+document.querySelector(".contact-us").addEventListener("mouseover", () => {
+    mouseCursor.classList.add("cursor-black");
+});
+document.querySelector(".contact-us").addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("cursor-black");
 });
