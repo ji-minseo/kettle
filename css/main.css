@@ -393,19 +393,44 @@ header .hamburger-menu:hover .dot {
     color: #feffbc;
 }
 .menu ul li a {
+    position: relative;
     
+}
+.menu ul li a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background-color: #feffbc;
+    left: 0;
+    animation: 0.3s ease 0s linkhover;
+
 }
 .menu .text-group {
 
 }
 
 .menu .text-group a {
+    position: relative;
 }
 
-.menu .text-group a > h3 {
+.menu .text-group h3 a {
     margin-bottom: 30px;
     font-size: 32px;
+    
 }
+.menu .text-group a:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    background-color: #feffbc;
+    left: 0;
+    animation: 0.3s ease 0s linkhover;
+}
+
 
 
 
