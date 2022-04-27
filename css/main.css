@@ -587,9 +587,9 @@ header .hamburger-menu:hover .dot {
     background-color: #000;
 }
 .collabs .inner {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    box-sizing: border-box;
+    padding-top: 40%;
+    
 }
 .collabs h2 {
     width: 90%;
@@ -1133,3 +1133,106 @@ footer .footer-content .social-media span {
 .video-loader img {
     width: 30%;
 }
+
+/* RESPONSIVE CODE */
+@media screen and (max-width:1023px) {
+    /* 타블렛 */
+    /* MAINVISUAL */
+    .visual .inner {
+        width: 80%;
+    }
+    .visual .arrow {
+        width: 50%;
+    }
+    .collabs h2 {
+        font-size: 30px;
+    }
+    .the-trevor-project .inner, .departures .inner, .korres .inner
+    , .urby .inner, .babe-by-hatch .inner {
+        flex-direction: column-reverse;
+        justify-content: center;
+        
+    }
+    .the-trevor-project .text-group, .departures .text-group,
+    .korres .text-group, .urby .text-group , .babe-by-hatch .text-group
+    , .inclusion-and-diversity .text-group{
+        width: 80%;
+        margin: 0;
+    }
+    .the-trevor-project video, .departures video, .korres img
+    ,.discover video, .urby img, .babe-by-hatch img{
+        width: 600px;
+        height: 600px;
+    }
+    .in-other-news .text-group {
+        flex-direction: column;
+    }
+    .in-other-news .text-group .column{
+        margin-bottom: 50px;
+    }
+    .in-other-news .text-group .column p {
+        margin-bottom: 30px;
+    }
+    .in-other-news h3 {
+        font-size: 80px;
+        width: 80%;
+    }
+    
+    }
+    
+@media screen and (max-width:767px) {
+    /* 모바일 */
+    /* MAINVISUAL */
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .the-trevor-project video, .departures video, .korres img
+    ,.discover video, .urby img, .babe-by-hatch img{
+        width: 300px;
+        height: 300px;
+    }
+    .in-other-news h4 {
+        font-size: 40px;
+    }
+    .in-other-news .text-group {
+        flex-direction: column;
+    }
+    .in-other-news .text-group .column{
+        margin-bottom: 50px;
+    }
+    .in-other-news .text-group .column p {
+        font-size: 16px;
+
+        margin-bottom: 30px;
+    }
+    .in-other-news .text-group .column a {
+        font-size: 16px;
+    }
+    .in-other-news h3 {
+        font-size: 50px;
+        width: 80%;
+    }
+    .in-other-news .image {
+        width: 150px;
+        height: 150px;
+    }
+    footer .contact-us .text-group h3  {
+        font-size: 30px;
+    }
+    footer .contact-us .text-group a {
+        font-size: 16px;
+    }
+    footer .footer-content .copyright {
+        font-size: 20px;
+    }
+    footer .footer-content .cities h5 {
+        font-size: 16px;
+    }
+    footer .footer-content .social-media span {
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+    }
