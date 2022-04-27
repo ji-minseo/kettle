@@ -194,3 +194,20 @@ new Swiper('.footer-content .swiper-container', {
     autoplay: true,
     loop: true
 });
+
+// 한 섹션씩 넘어가는 js
+
+
+
+// VIDEO LOADING 
+const video = document.querySelector('.main-video')
+video.addEventListener('canplay', () => {
+  console.log('ready')
+  showPage();
+
+})
+
+
+function showPage() {
+  document.querySelector(".video-loader").style.display = "none";
+}

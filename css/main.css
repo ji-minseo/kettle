@@ -1113,3 +1113,23 @@ footer .footer-content .social-media span {
     font-size: 16px;
     font-weight: 100;
 }
+
+/* VIDEO LOADER */
+.video-loader {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: fixed;
+    z-index: 90;
+    stroke: #fff;
+}
+.video-loader .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.video-loader img {
+    width: 30%;
+}
