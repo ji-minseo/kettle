@@ -587,8 +587,7 @@ header .hamburger-menu:hover .dot {
     background-color: #000;
 }
 .collabs .inner {
-    box-sizing: border-box;
-    padding-top: 40%;
+    
     
 }
 .collabs h2 {
@@ -1143,6 +1142,10 @@ footer .footer-content .social-media span {
     }
     .visual .arrow {
         width: 50%;
+    }
+    .collabs .inner {
+        box-sizing: border-box;
+        padding-top: 40%;
     }
     .collabs h2 {
         font-size: 30px;
